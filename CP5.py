@@ -6,7 +6,11 @@ tarefas = []
 def verificar_data(a):
     print(a)
     try:
-        dia = int(input("Insira o dia:"))
+        dia = int(input("Insira o dia: "))
+        mes = int(input("Insira o mês: "))
+        ano = int(input("Insira o ano: "))
+        data_formatada = f"{dia}/{mes}/{ano}"
+
     except:
         print("")
 
