@@ -152,13 +152,9 @@ def tarefas_atrasadas():
             print("Insira uma opção válida!\n")
 
 # Início do programa
-try:
-    data_hoje = verificar_data("Insira a data atual -")
-    data_atual = datetime.strptime(data_hoje, "%d/%m/%Y")
-    data_format = data_atual.strftime("%d/%m/%Y")
-except:
-    print("Insira")
-
+data_hoje = verificar_data("Insira a data atual -")
+data_atual = datetime.strptime(data_hoje, "%d/%m/%Y")
+data_format = data_atual.strftime("%d/%m/%Y")
 
 while True:
     print("\nGERENCIAMENTO VINHERIA AGNELLO")
